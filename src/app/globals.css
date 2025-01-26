@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --blue-dark-opacity-15: rgb(2, 2, 15, 15%);
+  --background-secondary: #020c20;
+
+  --border-primary: #1b2038;
+
+  --gray: #8d8e92;
+  --gray-2: #aaaaaa;
+
+  --yellow: #f6b500;
+  --blue: #2187e5;
+  --blue-2: #0038e0;
+
+  --green: #48ff5a;
+  --green-2: #2ea76f;
+
+  --orange: #da6900;
+
+  --blue-light-opacity-28: rgba(9, 55, 148, 0.28);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+html {
+  scroll-behavior: smooth !important;
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
