@@ -204,16 +204,13 @@ export default function Home() {
           });
         } else {
           // Nếu chuyền bóng thất bại, passer trở thành người bị phạt và tăng thứ tự bị phạt lên
-
           currentArrestPlayer = passer;
           indexCurrentArrestPlayer++;
         }
       }
-
-      console.log("Danh sách cầu thủ hiện tại:", finalListPlayer);
     };
 
-    while (round <= 3) {
+    while (round <= 10) {
       processRound(currentListPlayer, listArrestedPlayer);
       round++;
     }
